@@ -1,3 +1,17 @@
-print(my_list)
-my_list.print_sorted()
-print(my_list)
+l = MyList()
+assert isinstance(l, list)
+l = MyList([1, 2, 3])
+assert str(l) == '[1, 2, 3]'
+l = MyList()
+l.append(1)
+assert l == [1]
+l = MyList([1, 2, 3])
+assert l.print_sorted() == [1, 2, 3]
+l = MyList([3, 1, 2])
+assert l.print_sorted() == [1, 2, 3]
+l = MyList([-3, -2, 0, 1])
+assert l.print_sorted() == [-3, -2, 0, 1]
+l = MyList()
+assert l.print_sorted() == []
+l = MyList([3, 2, 1])
+assert l.print_sorted() is not l
