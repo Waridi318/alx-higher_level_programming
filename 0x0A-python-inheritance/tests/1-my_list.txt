@@ -13,6 +13,8 @@ Now use it:
     >>> a = MyList()
     >>> a
     []
+    >>> a.print_sorted()
+    []
 
     >>> a.append(1)
     >>> a
