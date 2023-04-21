@@ -110,3 +110,11 @@ class Rectangle(Base):
         """Public method
         """
         return self.__height * self.__width
+
+    def display(self):
+        """
+        prints rectangle to stdout"""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print("#", end="")
+            print()
