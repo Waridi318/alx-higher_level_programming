@@ -6,8 +6,9 @@ def pow(a, b):
         res = 1
         for i in range(b, 0):
             res = res * (1 / a)
+        return res
     else:
         res = 1
         for i in range(1, (b + 1)):
             res *= a
-    return res
+        return round(res, 2)
