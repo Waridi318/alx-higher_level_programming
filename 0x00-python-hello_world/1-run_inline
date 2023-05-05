@@ -1,2 +1,5 @@
 #!/bin/bash
+#the -c option is used to pass a command or code snippet to the 
+#python interpreter via the command line
 python3 -c "$PYCODE"
+
