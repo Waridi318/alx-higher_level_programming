@@ -8,10 +8,10 @@ def pow(a, b):
             res = res * (1 / a)
         return '{:.2f}'.format(res)
     elif b < 0 and a < 0:
-        res = 1 
+        res = 1
         for i in range(b, 0):
             res = res * (1 / a)
-        return res        
+        return res
     else:
         res = 1
         for i in range(1, (b + 1)):
