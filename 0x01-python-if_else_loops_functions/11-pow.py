@@ -6,7 +6,7 @@ def pow(a, b):
         res = 1
         for i in range(b, 0):
             res = res * (1 / a)
-        return res
+        return '{:.4f}'.format(res)
     else:
         res = 1
         for i in range(1, (b + 1)):
