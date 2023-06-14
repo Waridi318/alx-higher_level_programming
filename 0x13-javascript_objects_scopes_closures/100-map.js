@@ -7,5 +7,5 @@ const newList = list.map(function (num) {
   i++;
   return num * i;
 });
-
+console.log(list);
 console.log(newList);
