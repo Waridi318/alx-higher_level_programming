@@ -22,8 +22,6 @@ if __name__ == '__main__':
     count = session.query(State).count()
     if count == 0:
         print('Nothing')
-        print()
     else:
-        states = session.query(State).filter(State.id == 1)
-        state = states.first()
+        state = session.query(State).order_by(State.id).first()
         print('{}: {}'.format(state.id, state.name))
