@@ -19,9 +19,14 @@ if __name__ == '__main__':
 
     Session = sessionmaker(bind=engine)
     session = Session()
+#    count = session.query(State).count()
+#    if count == 0:
+#        print('Nothing')
+#        print()
     states = session.query(State).filter(State.id == 1)
     state = states.first()
     if states:
         print('{}: {}'.format(state.id, state.name))
     else:
         print('Nothing')
+        print()
