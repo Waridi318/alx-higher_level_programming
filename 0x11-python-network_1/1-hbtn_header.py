@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """
-script that takes in a URL,
+script that takes in a URL and
 sends a request to the URL and
 displays the value of the X-Request-Id variable
-found in the header of the response.
+found in the header of the response
 """
 
 
