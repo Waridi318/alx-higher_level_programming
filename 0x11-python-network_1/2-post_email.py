@@ -9,10 +9,11 @@ from sys import argv
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode
 
-values = {'email': argv[2]}
-data = urlencode(values)
-data = data.encode('utf-8')
-req = Request(argv[1], data)
-with urlopen(req) as response:
-    body = response.read().decode('utf-8')
-    print(body)
+if __name__ == "__main__":
+    values = {'email': argv[2]}
+    data = urlencode(values)
+    data = data.encode('utf-8')
+    req = Request(argv[1], data)
+    with urlopen(req) as response:
+        body = response.read().decode('utf-8')
+        print(body)
