@@ -12,4 +12,5 @@ with urlopen(req) as response:
     body = response.read()
 
 print("Body response:")
-print(f"\t- type: {type(body)}\n\t- content: {body}\n\t- utf8 content: {body.decode()}")
+print(f"\t- type: {type(body)}\n\t- content: {body}")
+print(f"\t- utf8 content: {body.decode()}")
