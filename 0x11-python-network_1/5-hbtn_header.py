@@ -13,7 +13,7 @@ from requests import get
 if __name__ == "__main__":
     r = get(argv[1])
     try:
-#    if (r.headers['X-Request-Id']):
+        # if (r.headers['X-Request-Id']):
         print(r.headers['X-Request-Id'])
     except Exception:
         pass
