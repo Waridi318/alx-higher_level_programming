@@ -12,5 +12,8 @@ from requests import get
 
 if __name__ == "__main__":
     r = get(argv[1])
-    if (r.headers['X-Request-Id']):
+    try:
+#    if (r.headers['X-Request-Id']):
         print(r.headers['X-Request-Id'])
+    except Exception:
+        pass
