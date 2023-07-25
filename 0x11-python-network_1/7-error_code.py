@@ -11,7 +11,8 @@ from requests import get
 
 if __name__ == "__main__":
     bad_r = get(argv[1])
-    if bad_r.status_code < 400:
+    #if bad_r.status_code < 400:
+    try:
         print(bad_r.text)
-    else:
+    except Exception:
         print(f"Error Code: {bad_r.status_code}")
